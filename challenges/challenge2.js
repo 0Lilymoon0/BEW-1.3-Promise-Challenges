@@ -7,15 +7,26 @@
  *    it runs? Run the code using `node challenge2.js` and verify that your
  *    expectation was correct.
  * 
+ *    Hello there, Ducky
+ *    MAKE SCHOOL IS AWESOME!!!
+ *    (This was correct.)
  * 
  * 2. What happens if greet() fails? Make it fail by changing 'name' to a number
  *    instead of a string. What happens? Does uppercaser() still run?
  * 
+ *    The console prints:
+ *    "Received an error!
+ *     Name must be a string!"
+ *    uppercaser() does not run.
  * 
  * 3. What happens if greet() succeeds and uppercaser() fails? Modify your code
  *    to achieve this result by changing the values of 'name' and 'my_str' and
  *    run the code again.
  * 
+ *    If we do this, the console prints:
+ *    "Hello there, Ducky
+ *     Received an error!
+ *     Argument to uppercaser must be string"
  * 
  * 4. Write a method that takes a string as input and returns the input string
  *    with a space added between each character. E.g. 'foo' -> 'f o o'
@@ -63,7 +74,7 @@ function uppercaser(str) {
     });
 }
 
-name = 'Ducky'
+name = "Ducky"
 my_str = 'Make School is Awesome!!!'
 
 greet(name)
